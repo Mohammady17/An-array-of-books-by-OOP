@@ -7,6 +7,11 @@ sealed public class FictionBook : Book
         Title = _title;
         Author = _author;
         Pages = _pages;
-        Genre = _genre;
+        Type = _genre;
+    }
+
+    public override void Category()
+    {
+        Console.WriteLine($"Genre: {Type}");
     }
 }
